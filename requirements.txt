@@ -1,0 +1,3 @@
+coverage
+MySQL-python
+python-coveralls
