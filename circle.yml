@@ -12,7 +12,7 @@ test:
   override:
     - /bin/bash test/unittest_agent1.sh
     - /bin/bash test/unittest_agent2.sh
-    - COVERALLS_REPO_TOKEN=hI6xHnwYh4fJ7HDE104QUK03nVvhHZLVC coveralls debug
+    - COVERALLS_REPO_TOKEN=hI6xHnwYh4fJ7HDE104QUK03nVvhHZLVC coveralls
     #- /bin/bash:
     #    parallel: true
     #    files:
