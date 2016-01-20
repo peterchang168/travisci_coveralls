@@ -15,7 +15,7 @@ test:
     - /bin/bash test/unittest_agent2.sh
     - COVERALLS_REPO_TOKEN=hI6xHnwYh4fJ7HDE104QUK03nVvhHZLVC coveralls
     - echo $CI_PULL_REQUEST
-    - COVERALLS_REPO_TOKEN=hI6xHnwYh4fJ7HDE104QUK03nVvhHZLVC CI_PULL_REQUEST=$CI_PULL_REQUEST coveralls
+    - COVERALLS_REPO_TOKEN=hI6xHnwYh4fJ7HDE104QUK03nVvhHZLVC CI_PULL_REQUEST=$CI_PULL_REQUEST CI_NAME=CircleCI CI_BUILD_NUMBER=$CIRCLE_BUILD_NUM CI_BRANCH=$CIRCLE_BRANCH coveralls
     #- /bin/bash:
     #    parallel: true
     #    files:
