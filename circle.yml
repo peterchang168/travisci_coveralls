@@ -5,7 +5,8 @@ machine:
 
 dependencies:
   post:
-    - pip install python-coveralls
+    #- pip install python-coveralls
+    - pip install coveralls
     - pip install -r requirements.txt
 
 test:
@@ -13,6 +14,8 @@ test:
     - /bin/bash test/unittest_agent1.sh
     - /bin/bash test/unittest_agent2.sh
     - COVERALLS_REPO_TOKEN=hI6xHnwYh4fJ7HDE104QUK03nVvhHZLVC coveralls
+    - echo $CI_PULL_REQUEST
+    - COVERALLS_REPO_TOKEN=hI6xHnwYh4fJ7HDE104QUK03nVvhHZLVC CI_PULL_REQUEST=$CI_PULL_REQUEST coveralls
     #- /bin/bash:
     #    parallel: true
     #    files:
