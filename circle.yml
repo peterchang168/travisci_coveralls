@@ -6,7 +6,7 @@ machine:
 dependencies:
   post:
     #- pip install python-coveralls
-    pip install coveralls
+    - pip install coveralls
     - pip install -r requirements.txt
 
 test:
